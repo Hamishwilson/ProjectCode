@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e065cfcb-54c7-45ec-a642-df0de5e66aeb" name="Default" comment="">
       <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Code/datatograph.py" afterPath="$PROJECT_DIR$/Code/datatograph.py" />
       <change beforePath="$PROJECT_DIR$/test.py" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -170,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521762516866</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="first set up data import programme">
+      <created>1521774488817</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1521774488817</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -207,7 +213,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
     <MESSAGE value="Version 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 1" />
+    <MESSAGE value="first set up data import programme" />
+    <option name="LAST_COMMIT_MESSAGE" value="first set up data import programme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
