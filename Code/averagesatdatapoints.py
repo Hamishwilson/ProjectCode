@@ -54,10 +54,6 @@ with open('../Data/DATA.csv','r' ) as csvfile:                  #Used to open cs
         data.append(temp2)#List to hold final variables
         lengthofdata += 1
 
-
-aHdegrees = []
-aVdegrees = []
-
 #averageVat0_y = []
 averageHat0_y = []
 #averageVat10_y = []
