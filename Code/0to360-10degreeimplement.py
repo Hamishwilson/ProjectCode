@@ -36,14 +36,14 @@ with open('../Data/DATA.csv','r' ) as csvfile: #Used to open csv file
                 if temp[4] == 'V':                          #for vertical
                     if degreeOfRotation == 0:             #if rotation goes to 180 will switch to false
                         flip = False                        #can be set to 0 depending whether full rotation during experiment
-                    elif degreeOfRotation == 540:           #if the rotation is 360 will switch to true
+                    elif degreeOfRotation == 540:           #if the rotation is 540 will switch to true
                         flip = True
 
                     if not flip:                            # If flip == false
                         degreeOfRotation += 10
                     elif flip:                              # If flip == true
                         degreeOfRotation -= 10
-        if lengthofdata > 0:
+        if lengthofdata > 0:                                #any degree between 360-540 will be made to 0-180
             if degreeOfRotation > 360:
                 degreeOfRotation -= 360
         temp.append(degreeOfRotation)                       #adds the degree of rotation to the temp
