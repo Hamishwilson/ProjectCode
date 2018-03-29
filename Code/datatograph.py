@@ -1,5 +1,6 @@
 import csv
 
+
 data = []
 degreeOfRotation = 0
 flip = False
@@ -27,9 +28,9 @@ with open('../Data/DATA.csv','r' ) as csvfile: #Used to open csv file
                         flip = True
 
                     if not flip:  # If flip == false
-                        degreeOfRotation += 2
+                        degreeOfRotation += 10
                     elif flip:  # If flip == true
-                        degreeOfRotation -= 2
+                        degreeOfRotation -= 10
 
                 if temp[4] == 'V':
                     if degreeOfRotation == 180:
@@ -38,9 +39,9 @@ with open('../Data/DATA.csv','r' ) as csvfile: #Used to open csv file
                         flip = True
 
                     if not flip:  # If flip == false
-                        degreeOfRotation += 2
+                        degreeOfRotation += 10
                     elif flip:  # If flip == true
-                        degreeOfRotation -= 2
+                        degreeOfRotation -= 10
 
         temp.append(degreeOfRotation)
 
@@ -54,4 +55,4 @@ with open('../Data/DATA.csv','r' ) as csvfile: #Used to open csv file
 
 csvfile.close() #Close
 
-#print(data)
+print(data)

@@ -58,7 +58,7 @@ setV_y = []
 setH_x = []
 setH_y = []
 
-for i in range(0,len(data)):
+for i in range(0, len(data)):
     if data[i][3] == 'V':
         setV_x.append(data[i][2])
         setV_y.append(data[i][1])
@@ -114,11 +114,12 @@ ax2.scatter(u, v)
 
 ax2.set_xlabel('degree of displacement/degree')
 ax2.set_ylabel('Vertical_displacement/mm')
-ax2.set_xlim(umin, umax)
-ax2.set_ylim(vmin, vmax)
+
+ax2.set_ylim(vmin, vmax)ax2.set_xlim(umin, umax)
 plt.yticks([v1, v2, v3, v4, v5, v6, v7, v8])
 
 fig.subplots_adjust(hspace=0.3)
 
-plt.show()
+print(setV_y)
 print(data)
+plt.show()
