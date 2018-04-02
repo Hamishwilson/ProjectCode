@@ -77,8 +77,8 @@ vmin = min(v)
 vmax = max(v)
 
 v1 = len(v)/8                                     #used this to set the Y axis before cluttered with all data points
-v2 = 2*(len(v)/8)
-v3 = 3*(len(v)/8)
+v2 = 2*(len(v)/8)                                  # I did this otherwise there was every data point on the y axis
+v3 = 3*(len(v)/8)                                   # although this means y axis still not scaled
 v4 = 4*(len(v)/8)
 v5 = 5*(len(v)/8)
 v6 = 6*(len(v)/8)

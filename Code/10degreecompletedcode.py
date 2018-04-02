@@ -74,8 +74,8 @@ vmin = min(v)
 vmax = max(v)
 
 v1 = len(v)/8                                     #used this to set the Y axis before cluttered with all data points
-v2 = 2*(len(v)/8)
-v3 = 3*(len(v)/8)
+v2 = 2*(len(v)/8)                                 # I did this otherwise there was every data point on the y axis
+v3 = 3*(len(v)/8)                                 # although this means y axis still not scaled
 v4 = 4*(len(v)/8)
 v5 = 5*(len(v)/8)
 v6 = 6*(len(v)/8)
@@ -100,7 +100,7 @@ y8 = len(y)
 
 ax1 = fig.add_subplot(211)
 ax1.scatter(x, y)
-ax1.set_xlim(xmin, xmax)
+ax1.set_xlim(0, 180)
 ax1.set_ylim(ymin, ymax)
 ax1.set_xlabel('degree of displacement/degree')
 ax1.set_ylabel('Horizontal_displacement/mm')
@@ -111,11 +111,11 @@ ax2.scatter(u, v)
 ax2.set_xlabel('degree of displacement/degree')
 ax2.set_ylabel('Vertical_displacement/mm')
 ax2.set_ylim(vmin, vmax)
-ax2.set_xlim(umin, umax)
+ax2.set_xlim(180, 360)
 plt.yticks([v1, v2, v3, v4, v5, v6, v7, v8])
 
 fig.subplots_adjust(hspace=0.3)                         #used this to spread the graphs out
 
 print(data)
 plt.show()
-fig.savefig('displacement.png', bbox_inches='tight')
+fig.savefig('displacement.png', bbox_inches='tight')       #turn on when you want to save something
