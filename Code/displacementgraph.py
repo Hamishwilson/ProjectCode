@@ -1,7 +1,5 @@
 import csv
-import numpy as np
 import matplotlib.pyplot as plt
-from statistics import mean
 import os
 
 data = []
@@ -150,3 +148,4 @@ plt.show()
 fig.savefig('displacement.png', bbox_inches='tight')
 
 csvfile.close()
+#close cvs
