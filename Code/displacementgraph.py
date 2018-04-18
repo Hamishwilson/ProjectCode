@@ -17,7 +17,7 @@ lengthofdata = 0
 script_path = os.path.abspath(__file__)
 #find the directory of the code
 script_dir = os.path.split(script_path)[0]
-#go back in directory one
+#go back in directory to find the folder the code is in
 rel_path = "DATA.csv"
 #add file name of code
 abs_file_path = os.path.join(script_dir, rel_path)
