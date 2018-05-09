@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import os
 
 data = []
-
+print('ensure data is called DATA in the csv format and placed in same directory as code')
 dpr = eval(input("enter the degree of rotation per reading: "))
 tdr = eval(input("enter the total degree of rotation travelled in experiment: "))
 vdr = tdr + 180
@@ -134,13 +134,15 @@ fig = plt.figure()
 ax1 = fig.add_subplot(211)
 ax1.scatter(datax, y)
 ax1.set_xlim(mindatax, maxdatax)
-ax1.set_xlabel('degree of displacement/degree')
-ax1.set_ylabel('Horizontal_displacement/mm')
+ax1.set_xlabel('degree of rotation (°)')
+ax1.set_ylabel('Horizontal_displacement (mm)')
+plt.grid()
 ax2 = fig.add_subplot(212)
 ax2.scatter(datau, v)
-ax2.set_xlabel('degree of displacement/degree')
-ax2.set_ylabel('Vertical_displacement/mm')
+ax2.set_xlabel('degree of rotation(°)')
+ax2.set_ylabel('Vertical_displacement (mm)')
 ax2.set_xlim(mindatau, maxdatau)
+plt.grid()
 fig.subplots_adjust(hspace=0.3)
 #used this to spread the graphs out
 
